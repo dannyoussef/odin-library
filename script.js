@@ -7,24 +7,23 @@ function Book(title, author) {
 
 function addBookToLibrary() {
   const book = new Book();
-  const book2 = new Book("something", "someone");
-  const book3 = new Book("something else", "someone else");
 
   book.title = prompt("Book Title:");
   book.author = prompt("Author:");
 
-  myLibrary.push(book);
-  myLibrary.push(book2);
-  myLibrary.push(book3);
+  if (book.title != "" && book.author != "") {
+    myLibrary.push(book);
+  }
 
-  return "Book title was " + book.title + " Author was " + book.author;
+  console.log(displayLibrary());
 }
 
 function displayLibrary() {
   myLibrary.forEach((book) => {
-    console.log("Book Title:" + book.title + "Author: " + book.author);
+    console.log("Book Title:" + book.title + " Author: " + book.author);
+    console.log(myLibrary.length);
   });
 }
 
-console.log(addBookToLibrary());
-console.log(displayLibrary());
+const newBook = document.querySelector("#new-book-btn");
+newBook.addEventListener("click", addBookToLibrary);
