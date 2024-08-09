@@ -19,8 +19,13 @@ function addBookToLibrary() {
 }
 
 function displayLibrary() {
+  let bookCardContainer = document.querySelector("#book-card-container");
+  let bookCard = bookCardContainer.appendChild(document.createElement("div"));
+  bookCard.classList.add("book-cards");
+
   myLibrary.forEach((book) => {
-    console.log("Book Title:" + book.title + " Author: " + book.author);
+    bookCard.textContent =
+      "Book Title: " + book.title + " Author: " + book.author;
     console.log(myLibrary.length);
   });
 }
