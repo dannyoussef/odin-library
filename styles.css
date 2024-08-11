@@ -1,10 +1,19 @@
 #book-card-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-items: center;
 }
 
 .book-cards {
-  font-size: 50px;
+  white-space: pre-line; /* Allows for using new line char \"n" */
+  font-size: 25px;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 10px;
+  margin: 20px 0px 20px 0px;
+  padding: 2%;
+  width: 90%;
+  height: 150px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 25px 0px;
 }
 
 ::backdrop {
@@ -14,6 +23,7 @@
 
 dialog {
   width: 30%;
+  border-radius: 20px;
 }
 
 label {

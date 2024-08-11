@@ -17,13 +17,15 @@
         >
           <div style="display: flex; flex-direction: column">
             <label for="book-title">Book Title:</label>
-            <input id="book-title" name="book-title" />
+            <input id="book-title" name="book-title" required />
             <label for="book-author">Book Author:</label>
-            <input id="book-author" name="book-author" />
+            <input id="book-author" name="book-author" required />
           </div>
           <div style="padding-top: 5%">
-            <button id="cancel" type="reset">Cancel</button>
-            <button id="confirm" type="submit">Confirm</button>
+            <button class="form-btns" id="cancel" type="reset">Cancel</button>
+            <button class="form-btns" id="confirm" type="submit">
+              Confirm
+            </button>
           </div>
         </form>
       </dialog>

@@ -5,6 +5,13 @@ function Book(title, author) {
   this.author = author;
 }
 
+const bookExample1 = new Book("Harry Potter", "JK Rowling");
+const bookExample2 = new Book("The Great Gatsby", "F. Scott Fitzgerald");
+myLibrary.push(bookExample1);
+displayLibrary();
+myLibrary.push(bookExample2);
+displayLibrary();
+
 function addBookToLibrary() {
   const book = new Book();
   let bookTitleInput = document.getElementById("book-title");
@@ -29,7 +36,7 @@ function displayLibrary() {
 
   myLibrary.forEach((book) => {
     bookCard.textContent =
-      "Book Title: " + book.title + " Author: " + book.author;
+      "Book Title: " + book.title + " \nAuthor: " + book.author;
     console.log(myLibrary.length);
   });
 }
