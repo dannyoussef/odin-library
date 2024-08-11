@@ -13,11 +13,10 @@
 }
 
 dialog {
-  border-radius: 20px;
   width: 30%;
 }
 
 label {
   font-weight: bold;
-  padding: 10px 0px 10px 0px;
+  padding: 5% 0px 10px 0px;
 }
