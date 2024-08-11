@@ -11,7 +11,10 @@
   <body>
     <div id="container">
       <dialog id="new-book-dialog">
-        <form method="dialog">
+        <form
+          method="dialog"
+          onsubmit="this.submit(); this.reset(); return false;"
+        >
           <div style="display: flex; flex-direction: column">
             <label for="book-title">Book Title:</label>
             <input id="book-title" name="book-title" />
