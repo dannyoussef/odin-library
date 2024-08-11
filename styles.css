@@ -6,3 +6,18 @@
 .book-cards {
   font-size: 50px;
 }
+
+::backdrop {
+  background-color: gray;
+  opacity: 0.75;
+}
+
+dialog {
+  border-radius: 20px;
+  width: 30%;
+}
+
+label {
+  font-weight: bold;
+  padding: 10px 0px 10px 0px;
+}

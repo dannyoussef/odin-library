@@ -10,8 +10,22 @@
 
   <body>
     <div id="container">
-      <div id="new-book-btn-container">
-        <button id="new-book-btn">New Book</button>
+      <dialog id="new-book-dialog">
+        <form method="dialog">
+          <div style="display: flex; flex-direction: column">
+            <label for="book-title">Book Title:</label>
+            <input id="book-title" name="book-title" />
+            <label for="book-author">Book Author:</label>
+            <input id="book-author" name="book-author" />
+          </div>
+          <div style="padding-top: 5%">
+            <button id="cancel" type="reset">Cancel</button>
+            <button type="submit">Confirm</button>
+          </div>
+        </form>
+      </dialog>
+      <div>
+        <button id="add-book-btn">Add Book</button>
       </div>
       <div id="book-card-container"></div>
     </div>

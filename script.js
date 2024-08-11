@@ -30,5 +30,19 @@ function displayLibrary() {
   });
 }
 
-const newBook = document.querySelector("#new-book-btn");
-newBook.addEventListener("click", addBookToLibrary);
+// const newBook = document.querySelector("#new-book-btn");
+// newBook.addEventListener("click", addBookToLibrary);
+
+const addBook = document.getElementById("add-book-btn");
+const cancel = document.getElementById("cancel");
+const dialog = document.getElementById("new-book-dialog");
+
+// Update button opens a modal dialog
+addBook.addEventListener("click", () => {
+  dialog.showModal();
+});
+
+// Form cancel button closes the dialog box
+cancel.addEventListener("click", () => {
+  dialog.close("animalNotChosen");
+});
