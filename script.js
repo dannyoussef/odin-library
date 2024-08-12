@@ -5,7 +5,10 @@ function Book(title, author) {
   this.author = author;
 }
 
-const bookExample1 = new Book("Harry Potter", "JK Rowling");
+const bookExample1 = new Book(
+  "Harry Potter: The Sorcerer's Stone",
+  "J.K. Rowling"
+);
 const bookExample2 = new Book("The Great Gatsby", "F. Scott Fitzgerald");
 myLibrary.push(bookExample1);
 displayLibrary();
