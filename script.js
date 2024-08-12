@@ -35,8 +35,7 @@ function displayLibrary() {
   bookCard.classList.add("book-cards");
 
   myLibrary.forEach((book) => {
-    bookCard.textContent =
-      "Book Title: " + book.title + " \nAuthor: " + book.author;
+    bookCard.textContent = "Title: " + book.title + " \nAuthor: " + book.author;
     console.log(myLibrary.length);
   });
 }
