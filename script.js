@@ -32,10 +32,17 @@ function addBookToLibrary() {
 function displayLibrary() {
   let bookCardContainer = document.getElementById("book-card-container");
   let bookCard = bookCardContainer.appendChild(document.createElement("div"));
+  let bookCardHeader = bookCard.appendChild(document.createElement("h4"));
+  let bookCardAuthor = bookCard.appendChild(document.createElement("p"));
+
   bookCard.classList.add("book-cards");
+  bookCardHeader.classList.add("book-card-headers");
+  bookCardAuthor.classList.add("book-card-authors");
 
   myLibrary.forEach((book) => {
-    bookCard.textContent = "Title: " + book.title + " \nAuthor: " + book.author;
+    bookCardHeader.textContent = book.title;
+    bookCardAuthor.textContent = book.author;
+
     console.log(myLibrary.length);
   });
 }
