@@ -37,12 +37,18 @@ function displayLibrary() {
   let bookCard = bookCardContainer.appendChild(document.createElement("div"));
   let bookCardHeader = bookCard.appendChild(document.createElement("h4"));
   let bookCardAuthor = bookCard.appendChild(document.createElement("p"));
+  let removeButton = bookCard.appendChild(document.createElement("button"));
+  let readUnreadButton = bookCard.appendChild(document.createElement("button"));
 
   bookCard.classList.add("book-cards");
   bookCardHeader.classList.add("book-card-headers");
   bookCardAuthor.classList.add("book-card-authors");
+  removeButton.classList.add("remove-btns");
+  readUnreadButton.classList.add("read-unread-btns");
 
   myLibrary.forEach((book) => {
+    removeButton.textContent = "Remove";
+    readUnreadButton.textContent = "Read";
     bookCardHeader.textContent = book.title;
     bookCardAuthor.textContent = book.author;
 
