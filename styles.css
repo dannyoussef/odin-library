@@ -20,12 +20,7 @@ body {
   width: 90%;
   height: 300px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 25px 0px;
-  transition-duration: 0.2s;
   align-content: end;
-}
-
-.book-cards:hover {
-  transform: translateY(-20px);
 }
 
 .book-cards > p {
