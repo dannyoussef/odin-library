@@ -24,7 +24,7 @@ body {
 }
 
 .book-cards > p {
-  color: gray;
+  color: darkgray;
 }
 
 ::backdrop {
