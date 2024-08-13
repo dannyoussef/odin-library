@@ -60,6 +60,14 @@ function displayLibrary() {
   removeButton.addEventListener("click", () => {
     removeButton.parentElement.remove();
   });
+
+  readUnreadButton.addEventListener("click", () => {
+    if (readUnreadButton.textContent == "Read") {
+      readUnreadButton.textContent = "Unread";
+    } else {
+      readUnreadButton.textContent = "Read";
+    }
+  });
 }
 
 const addBook = document.getElementById("add-book-btn");
