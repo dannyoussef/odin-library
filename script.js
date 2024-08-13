@@ -47,12 +47,18 @@ function displayLibrary() {
   readUnreadButton.classList.add("read-unread-btns");
 
   myLibrary.forEach((book) => {
+    bookCard.dataset.value = myLibrary.length;
+    removeButton.dataset.value = bookCard.dataset.value;
     removeButton.textContent = "Remove";
     readUnreadButton.textContent = "Read";
     bookCardHeader.textContent = book.title;
     bookCardAuthor.textContent = book.author;
 
     console.log(myLibrary.length);
+  });
+
+  removeButton.addEventListener("click", () => {
+    removeButton.parentElement.remove();
   });
 }
 
