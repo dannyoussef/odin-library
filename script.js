@@ -51,6 +51,7 @@ function displayLibrary() {
     removeButton.dataset.value = bookCard.dataset.value;
     removeButton.textContent = "Remove";
     readUnreadButton.textContent = "Read";
+    readUnreadButton.style.backgroundColor = "green";
     bookCardHeader.textContent = book.title;
     bookCardAuthor.textContent = book.author;
 
@@ -64,8 +65,10 @@ function displayLibrary() {
   readUnreadButton.addEventListener("click", () => {
     if (readUnreadButton.textContent == "Read") {
       readUnreadButton.textContent = "Unread";
+      readUnreadButton.style.backgroundColor = "rgb(136, 45, 45)";
     } else {
       readUnreadButton.textContent = "Read";
+      readUnreadButton.style.backgroundColor = "green";
     }
   });
 }
