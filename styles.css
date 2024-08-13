@@ -18,7 +18,7 @@ body {
   margin: 20px 0px 20px 0px;
   padding: 2%;
   width: 90%;
-  height: 300px;
+  height: auto;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 25px 0px;
   align-content: end;
 }
